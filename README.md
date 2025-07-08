@@ -1,6 +1,7 @@
-# 🧠 User-Based Todo List (Node.js + MySQL)
+# 🧠 User-Based Todo List Project (Node.js + MySQL)
 
-This is a full-featured backend web app built with pure Node.js and MySQL — no frameworks like Express or frontend libraries. It allows users to sign up, log in, and manage a personal todo list, with each user's tasks stored securely and separately.
+This project showcases two versions of a full-featured backend web app built with **pure Node.js and MySQL** — one using **raw SQL queries**, and another using the **Sequelize ORM**.  
+Both versions allow users to sign up, log in, and manage their own private todo lists.
 
 ---
 
@@ -35,21 +36,39 @@ This is a full-featured backend web app built with pure Node.js and MySQL — no
 
 project/
 
-├── connection.js # MySQL connection
+├── Raw SQL version/ # ✅ Version 1: Uses raw MySQL queries
 
-├── server.js # Main router + session handling
+│ ├── server.js
 
-├── auth/
+│ ├── connection.js
 
-│ ├── signup.js # Signup form + logic
+│ ├── auth/
 
-│ └── signin.js # Signin form + logic
+│ │ ├── signup.js
 
-├── public/
+│ │ └── signin.js
 
-│ └── style.css # Shared CSS for all pages
+│ └── public/
 
-└── screenshots/ # Screenshots for README (optional)
+│ └── style.css
+
+├── ORM version/ # ✅ Version 2: Uses Sequelize ORM
+
+│ ├── server.js
+
+│ ├── models/
+
+│ │ ├── index.js
+
+│ │ ├── user.js
+
+│ │ └── todo.js
+
+│ └── public/
+
+│ └── style.css
+
+└── screenshots/
 
 ---
 
@@ -84,11 +103,18 @@ CREATE TABLE todos (
 ```
 Update the database credentials in connection.js.
 
-▶️ Run the App
+▶️ Running Each Version
+🧱 Raw SQL Version
 ```bash
+cd Raw SQL version
 node server.js
 ```
-Visit http://localhost:3000/todos in your browser.
+⚙️ Sequelize ORM Version
+```bash
+cd ORM version
+node server.js
+```
+Visit: http://localhost:3000
 
 ---
 🎓 Learning Highlights

@@ -1,0 +1,147 @@
+/* === Base Styling === */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #fff3e6;
+    margin: 0;
+    padding: 40px 20px;
+    color: #333;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+  }
+  
+  h2 {
+    color: #ff6600;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  h3 {
+    color: #ff6600;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ff6600;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* === Form Styling === */
+  form {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 2px solid #ffa64d;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    text-align: center;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    padding: 12px;
+    font-size: 16px;
+    width: 80%;
+    max-width: 300px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    display: block;
+  }
+  
+  input[type="submit"],
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 12px;
+    display: inline-block;
+    transition: background-color 0.2s ease;
+  }
+  
+  input[type="submit"]:hover,
+  .button:hover {
+    background-color: #e65c00;
+  }
+  
+  /* === Todo List === */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  li {
+    background: #fff;
+    border-left: 6px solid #ffa64d;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* === Button Links (styled links) === */
+  .btn {
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    text-decoration: none;
+  }
+  
+  .btn.complete {
+    background-color: #ffd580;
+    color: #333;
+    border: 1px solid #ffad33;
+  }
+  
+  .btn.complete:hover {
+    background-color: #ffb84d;
+  }
+  
+  .btn.delete {
+    background-color: #ff9999;
+    color: white;
+    border: 1px solid #cc0000;
+  }
+  
+  .btn.delete:hover {
+    background-color: #cc0000;
+  }
+  
+  .btn.logout {
+    background-color: #999;
+    border: 1px solid #777;
+    margin-top: 20px;
+  }
+  
+  .btn.logout:hover {
+    background-color: #666;
+    color: white;
+  }
